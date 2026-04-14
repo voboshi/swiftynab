@@ -71,7 +71,7 @@ public struct TransactionDetail: Codable, Equatable, Sendable {
     public let importPayeeNameOriginal: String?
 
     /// If the transaction is for a loan, etc
-    public let debtTransactionType: String?
+    public let debtTransactionType: DebtTransactionType?
 
     /// Whether or not the transaction has been deleted
     public let deleted: Bool

@@ -10,7 +10,7 @@ import Foundation
 
 public struct HybridTransaction: Codable, Equatable, Sendable {
     /// Transaction type
-    public let type: String
+    public let type: HybridTransactionType
 
     /// Id of the parent transaction
     public let parentTransactionId: String?
@@ -55,7 +55,7 @@ public struct HybridTransaction: Codable, Equatable, Sendable {
     public let categoryId: String?
 
     /// Category name
-    public let categoryName: String
+    public let categoryName: String?
 
     /// Transfer account id
     public let transferAccountId: String?

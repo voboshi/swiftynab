@@ -19,10 +19,11 @@ struct ScheduledTransactionServiceTests {
             id: "id",
             dateFirst: "2022-07-07",
             dateNext: "2022-07-08",
-            frequency: "",
+            frequency: .monthly,
             amount: 0,
             memo: nil,
             flagColor: nil,
+            flagName: nil,
             accountId: "account_id",
             accountName: "account_name",
             payeeId: "payee_id",
@@ -61,23 +62,20 @@ struct ScheduledTransactionServiceTests {
 
     @Test("Returns all scheduled transactions for a budget when request succeeds")
     func getScheduledTransactionsReturnsTransactionsWhenRequestSucceeds() async throws {
-        let expectedTransaction = ScheduledTransactionDetail(
+        let expectedTransaction = ScheduledTransactionSummary(
             id: "id",
             dateFirst: "2022-07-07",
             dateNext: "2022-07-08",
-            frequency: "",
+            frequency: .monthly,
             amount: 0,
             memo: nil,
             flagColor: nil,
+            flagName: nil,
             accountId: "account_id",
-            accountName: "account_name",
             payeeId: "payee_id",
-            payeeName: "payee_name",
             categoryId: nil,
-            categoryName: nil,
             transferAccountId: nil,
-            deleted: false,
-            subtransactions: []
+            deleted: false
         )
         let expectedResponse = ScheduledTransactionsRequest.Response(
             scheduledTransactions: [expectedTransaction],
@@ -115,16 +113,17 @@ struct ScheduledTransactionServiceTests {
             categoryId: "category_id",
             memo: "test memo",
             flagColor: nil,
-            frequency: "monthly"
+            frequency: .monthly
         )
         let expectedScheduledTransaction = ScheduledTransactionDetail(
             id: "scheduled_transaction_id",
             dateFirst: "2022-07-07",
             dateNext: "2022-08-07",
-            frequency: "monthly",
+            frequency: .monthly,
             amount: 100,
             memo: "test memo",
             flagColor: nil,
+            flagName: nil,
             accountId: "account_id",
             accountName: "account_name",
             payeeId: "payee_id",
@@ -159,7 +158,7 @@ struct ScheduledTransactionServiceTests {
             categoryId: "category_id",
             memo: "test memo",
             flagColor: nil,
-            frequency: "monthly"
+            frequency: .monthly
         )
         let expectedError = SwiftYNABError.httpError(statusCode: 500)
         let client = MockFailureClient(expectedError: expectedError)
@@ -184,16 +183,17 @@ struct ScheduledTransactionServiceTests {
             categoryId: "category_id",
             memo: "updated memo",
             flagColor: nil,
-            frequency: "weekly"
+            frequency: .weekly
         )
         let expectedScheduledTransaction = ScheduledTransactionDetail(
             id: "scheduled_transaction_id",
             dateFirst: "2022-07-07",
             dateNext: "2022-07-14",
-            frequency: "weekly",
+            frequency: .weekly,
             amount: 150,
             memo: "updated memo",
             flagColor: nil,
+            flagName: nil,
             accountId: "account_id",
             accountName: "account_name",
             payeeId: "payee_id",
@@ -229,7 +229,7 @@ struct ScheduledTransactionServiceTests {
             categoryId: "category_id",
             memo: "updated memo",
             flagColor: nil,
-            frequency: "weekly"
+            frequency: .weekly
         )
         let expectedError = SwiftYNABError.httpError(statusCode: 500)
         let client = MockFailureClient(expectedError: expectedError)
@@ -250,10 +250,11 @@ struct ScheduledTransactionServiceTests {
             id: "scheduled_transaction_id",
             dateFirst: "2022-07-07",
             dateNext: "2022-08-07",
-            frequency: "monthly",
+            frequency: .monthly,
             amount: 100,
             memo: "test memo",
             flagColor: nil,
+            flagName: nil,
             accountId: "account_id",
             accountName: "account_name",
             payeeId: "payee_id",

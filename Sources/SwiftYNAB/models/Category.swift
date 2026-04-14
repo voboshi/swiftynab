@@ -43,7 +43,7 @@ public struct Category: Codable, Equatable, Sendable {
     /// Type of goal associated with this category
     /// Possible values: TB (Target Category Balance), TBD (Target Category Balance by Date),
     /// MF (Monthly Funding), NEED (Plan Your Spending), DEBT, or null
-    public let goalType: String?
+    public let goalType: GoalType?
 
     /// Indicates the monthly rollover behavior for "NEED"-type goals.
     /// When "true", the goal will always ask for the target amount in the new month ("Set Aside").

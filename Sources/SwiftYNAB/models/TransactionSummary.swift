@@ -23,13 +23,13 @@ public struct TransactionSummary: Codable, Equatable, Sendable {
     public let memo: String?
 
     /// Whether or not the transaction has been cleared
-    public let cleared: String
+    public let cleared: ClearedStatus
 
     /// Whether or not the transaction has been approved
     public let approved: Bool
 
     /// Flag color
-    public let flagColor: String?
+    public let flagColor: FlagColor?
 
     /// Id of the account this transaction belongs to
     public let accountId: String

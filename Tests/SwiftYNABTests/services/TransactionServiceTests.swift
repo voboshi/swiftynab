@@ -41,8 +41,7 @@ struct TransactionServiceTests {
             subtransactions: []
         )
         let expectedResponse = TransactionRequest.Response(
-            transaction: expectedTransaction,
-            serverKnowledge: 200
+            transaction: expectedTransaction
         )
         let client = MockSuccessClient(expectedResponse: expectedResponse)
         let service = TransactionService(client: client)
@@ -51,8 +50,7 @@ struct TransactionServiceTests {
             transactionId: "id"
         )
 
-        #expect(expectedTransaction == actualResponse.0)
-        #expect(actualResponse.1 == 200)
+        #expect(expectedTransaction == actualResponse)
     }
 
     @Test("Throws error when fetching a single transaction fails")
@@ -174,7 +172,7 @@ struct TransactionServiceTests {
     @Test("Returns transactions for a category when request succeeds")
     func getTransactionsByCategoryReturnsTransactionsWhenRequestSucceeds() async throws {
         let expectedTransaction = HybridTransaction(
-            type: "type",
+            type: .transaction,
             parentTransactionId: nil,
             id: "id",
             date: "2022-07-07",
@@ -189,7 +187,7 @@ struct TransactionServiceTests {
             payeeId: nil,
             payeeName: nil,
             categoryId: "category_id",
-            categoryName: "",
+            categoryName: nil,
             transferAccountId: nil,
             transferTransactionId: nil,
             matchedTransactionId: nil,
@@ -227,7 +225,7 @@ struct TransactionServiceTests {
     @Test("Returns transactions for a payee when request succeeds")
     func getTransactionsByPayeeReturnsTransactionsWhenRequestSucceeds() async throws {
         let expectedTransaction = HybridTransaction(
-            type: "type",
+            type: .transaction,
             parentTransactionId: nil,
             id: "id",
             date: "2022-07-07",
@@ -242,7 +240,7 @@ struct TransactionServiceTests {
             payeeId: "payee_id",
             payeeName: nil,
             categoryId: "category_id",
-            categoryName: "",
+            categoryName: nil,
             transferAccountId: nil,
             transferTransactionId: nil,
             matchedTransactionId: nil,
@@ -280,7 +278,7 @@ struct TransactionServiceTests {
     @Test("Returns transactions for a month when request succeeds")
     func getTransactionsByMonthReturnsTransactionsWhenRequestSucceeds() async throws {
         let expectedTransaction = HybridTransaction(
-            type: "type",
+            type: .transaction,
             parentTransactionId: nil,
             id: "id",
             date: "2022-07-07",
@@ -295,7 +293,7 @@ struct TransactionServiceTests {
             payeeId: "payee_id",
             payeeName: nil,
             categoryId: "category_id",
-            categoryName: "",
+            categoryName: nil,
             transferAccountId: nil,
             transferTransactionId: nil,
             matchedTransactionId: nil,

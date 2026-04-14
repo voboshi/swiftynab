@@ -40,7 +40,7 @@ public struct SaveScheduledTransaction: Codable, Equatable, Sendable {
     public let flagColor: FlagColor?
 
     /// The scheduled transaction frequency
-    public let frequency: String
+    public let frequency: ScheduledTransactionFrequency
 
     /// Creates a new SaveScheduledTransaction instance
     /// - Parameters:
@@ -62,7 +62,7 @@ public struct SaveScheduledTransaction: Codable, Equatable, Sendable {
         categoryId: String? = nil,
         memo: String? = nil,
         flagColor: FlagColor? = nil,
-        frequency: String
+        frequency: ScheduledTransactionFrequency
     ) {
         self.accountId = accountId
         self.date = date
@@ -73,5 +73,32 @@ public struct SaveScheduledTransaction: Codable, Equatable, Sendable {
         self.memo = memo
         self.flagColor = flagColor
         self.frequency = frequency
+    }
+}
+
+extension SaveScheduledTransaction {
+    enum CodingKeys: String, CodingKey {
+        case accountId
+        case date
+        case amount
+        case payeeId
+        case payeeName
+        case categoryId
+        case memo
+        case flagColor
+        case frequency
+    }
+
+    public func encode(to encoder: any Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(accountId, forKey: .accountId)
+        try container.encode(DateConverter.iso8601DateString(from: date), forKey: .date)
+        try container.encodeIfPresent(amount, forKey: .amount)
+        try container.encodeIfPresent(payeeId, forKey: .payeeId)
+        try container.encodeIfPresent(payeeName, forKey: .payeeName)
+        try container.encodeIfPresent(categoryId, forKey: .categoryId)
+        try container.encodeIfPresent(memo, forKey: .memo)
+        try container.encodeIfPresent(flagColor, forKey: .flagColor)
+        try container.encode(frequency, forKey: .frequency)
     }
 }

@@ -20,7 +20,7 @@ public struct ScheduledTransactionDetail: Codable, Equatable, Sendable {
     public let dateNext: String
 
     /// How often the transaction happens
-    public let frequency: String
+    public let frequency: ScheduledTransactionFrequency
 
     /// Amount of the transaction in milliunits
     public let amount: Int
@@ -29,7 +29,10 @@ public struct ScheduledTransactionDetail: Codable, Equatable, Sendable {
     public let memo: String?
 
     /// Flag color
-    public let flagColor: String?
+    public let flagColor: FlagColor?
+
+    /// Customized flag name
+    public let flagName: String?
 
     /// Account id
     public let accountId: String
@@ -38,10 +41,10 @@ public struct ScheduledTransactionDetail: Codable, Equatable, Sendable {
     public let accountName: String
 
     /// Payee id
-    public let payeeId: String
+    public let payeeId: String?
 
     /// Payee name
-    public let payeeName: String
+    public let payeeName: String?
 
     /// Category id
     public let categoryId: String?

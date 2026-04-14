@@ -52,7 +52,7 @@ struct RequestTests {
         let mockRequest = MockGetRequest()
         let request = mockRequest.request
 
-        #expect(request.url?.absoluteString == "https://api.youneedabudget.com/testpath")
+        #expect(request.url?.absoluteString == "https://api.ynab.com/testpath")
         #expect(request.httpMethod == mockRequest.method.rawValue)
         #expect(request.timeoutInterval == mockRequest.timeout)
         #expect(request.url?.query == nil)
@@ -63,7 +63,7 @@ struct RequestTests {
         let mockRequest = MockPostRequest()
         let request = mockRequest.request
 
-        #expect(request.url?.absoluteString == "https://api.youneedabudget.com/testpath")
+        #expect(request.url?.absoluteString == "https://api.ynab.com/testpath")
         #expect(request.httpMethod == mockRequest.method.rawValue)
         #expect(request.timeoutInterval == mockRequest.timeout)
         #expect(request.httpBody == mockRequest.body)
@@ -77,7 +77,7 @@ struct RequestTests {
         let mockRequest = MockPatchRequest()
         let request = mockRequest.request
 
-        #expect(request.url?.absoluteString == "https://api.youneedabudget.com/testpath")
+        #expect(request.url?.absoluteString == "https://api.ynab.com/testpath")
         #expect(request.httpMethod == mockRequest.method.rawValue)
         #expect(request.timeoutInterval == mockRequest.timeout)
         #expect(request.httpBody == mockRequest.body)
@@ -91,7 +91,7 @@ struct RequestTests {
         let mockRequest = MockPutRequest()
         let request = mockRequest.request
 
-        #expect(request.url?.absoluteString == "https://api.youneedabudget.com/testpath")
+        #expect(request.url?.absoluteString == "https://api.ynab.com/testpath")
         #expect(request.httpMethod == mockRequest.method.rawValue)
         #expect(request.timeoutInterval == mockRequest.timeout)
         #expect(request.httpBody == mockRequest.body)
