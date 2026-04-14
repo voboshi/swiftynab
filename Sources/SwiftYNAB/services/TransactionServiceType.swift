@@ -10,7 +10,7 @@ import Foundation
 
 protocol TransactionServiceType: Sendable {
     func transaction(budgetId: String, transactionId: String) async throws
-        -> (TransactionDetail, ServerKnowledge)
+        -> TransactionDetail
 
     func transactions(
         budgetId: String,

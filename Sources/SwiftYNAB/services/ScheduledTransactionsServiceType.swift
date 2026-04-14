@@ -15,7 +15,7 @@ protocol ScheduledTransactionServiceType: Sendable {
     func scheduledTransactions(
         budgetId: String,
         lastKnowledgeOfServer: ServerKnowledge?
-    ) async throws -> ([ScheduledTransactionDetail], ServerKnowledge)
+    ) async throws -> ([ScheduledTransactionSummary], ServerKnowledge)
 
     func createScheduledTransaction(
         budgetId: String,

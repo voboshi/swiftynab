@@ -47,7 +47,7 @@ extension ScheduledTransactionService: ScheduledTransactionServiceType {
     public func scheduledTransactions(
         budgetId: String,
         lastKnowledgeOfServer: ServerKnowledge? = nil
-    ) async throws -> ([ScheduledTransactionDetail], ServerKnowledge) {
+    ) async throws -> ([ScheduledTransactionSummary], ServerKnowledge) {
         let request = ScheduledTransactionsRequest(
             budgetId: budgetId,
             lastKnowledgeOfServer: lastKnowledgeOfServer

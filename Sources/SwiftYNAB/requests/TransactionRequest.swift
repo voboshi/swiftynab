@@ -22,6 +22,5 @@ extension TransactionRequest: Request {
 extension TransactionRequest {
     struct Response: Decodable {
         let transaction: TransactionDetail
-        let serverKnowledge: ServerKnowledge
     }
 }

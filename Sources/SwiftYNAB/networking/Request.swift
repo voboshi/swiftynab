@@ -47,7 +47,7 @@ extension Request {
     var request: URLRequest {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
-        urlComponents.host = "api.youneedabudget.com"
+        urlComponents.host = "api.ynab.com"
         urlComponents.path = "\(path)"
         urlComponents.queryItems = query
 

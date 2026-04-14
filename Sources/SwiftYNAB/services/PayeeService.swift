@@ -27,17 +27,17 @@ extension PayeeService: PayeeServiceType {
     /// `lastKnowledgeOfServer`
     ///    will be included.
     ///
-    /// - Returns: A list of payees
+    /// - Returns: A tuple containing a list of payees and the last server knowledge
     public func payees(
         budgetId: String,
         lastKnowledgeOfServer: ServerKnowledge? = nil
-    ) async throws -> [Payee] {
+    ) async throws -> ([Payee], ServerKnowledge) {
         let request = PayeesRequest(
             budgetId: budgetId,
             lastKnowledgeOfServer: lastKnowledgeOfServer
         )
         let response = try await client.perform(request)
-        return response.payees
+        return (response.payees, response.serverKnowledge)
     }
 
     /// Returns a single payee.

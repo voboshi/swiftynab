@@ -13,7 +13,7 @@ protocol PayeeServiceType: Sendable {
         budgetId: String,
         lastKnowledgeOfServer: ServerKnowledge?
     ) async throws
-        -> [Payee]
+        -> ([Payee], ServerKnowledge)
 
     func payee(budgetId: String, payeeId: String) async throws -> Payee
 

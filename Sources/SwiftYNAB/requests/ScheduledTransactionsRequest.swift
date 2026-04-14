@@ -29,7 +29,7 @@ extension ScheduledTransactionsRequest: Request {
 
 extension ScheduledTransactionsRequest {
     struct Response: Decodable {
-        let scheduledTransactions: [ScheduledTransactionDetail]
+        let scheduledTransactions: [ScheduledTransactionSummary]
         let serverKnowledge: ServerKnowledge
     }
 }

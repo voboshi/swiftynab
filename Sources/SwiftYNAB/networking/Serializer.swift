@@ -22,12 +22,29 @@ extension Serializer {
     private static let defaultDecoder: JSONDecoder = {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
+        decoder.dateDecodingStrategy = .custom { decoder in
+            let container = try decoder.singleValueContainer()
+            let value = try container.decode(String.self)
+
+            guard let date = DateConverter.date(from: value) else {
+                throw DecodingError.dataCorruptedError(
+                    in: container,
+                    debugDescription: "Expected ISO-8601 date string in yyyy-MM-dd format."
+                )
+            }
+
+            return date
+        }
         return decoder
     }()
 
     private static let defaultEncoder: JSONEncoder = {
         let encoder = JSONEncoder()
         encoder.keyEncodingStrategy = .convertToSnakeCase
+        encoder.dateEncodingStrategy = .custom { date, encoder in
+            var container = encoder.singleValueContainer()
+            try container.encode(DateConverter.iso8601DateString(from: date))
+        }
         encoder.outputFormatting = .prettyPrinted
         return encoder
     }()
