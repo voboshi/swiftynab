@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MoneyMovementService Structure Reference</title>
+    <title>ScheduledTransactionFrequency Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/MoneyMovementService" class="dashAnchor"></a>
-    <a title="MoneyMovementService Structure Reference"></a>
+    <a name="//apple_ref/swift/Enum/ScheduledTransactionFrequency" class="dashAnchor"></a>
+    <a title="ScheduledTransactionFrequency Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SwiftYNAB 3.2.0 Docs</a></p>
@@ -30,9 +30,9 @@
       <p id="breadcrumbs">
         <a href="../index.html">SwiftYNAB</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        <a href="../Structs.html">Structures</a>
+        <a href="../Enums.html">Enumerations</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        MoneyMovementService Structure Reference
+        ScheduledTransactionFrequency Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -229,15 +229,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>MoneyMovementService</h1>
+            <h1>ScheduledTransactionFrequency</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MoneyMovementService</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ScheduledTransactionFrequency</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
 
                 </div>
               </div>
-            <p>Provides access to money movement operations</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -246,55 +246,26 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SwiftYNAB20MoneyMovementServiceV14moneyMovements8budgetIdSayAA0cD0VG_SitSS_tYaKF"></a>
-                    <a name="//apple_ref/swift/Method/moneyMovements(budgetId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SwiftYNAB20MoneyMovementServiceV14moneyMovements8budgetIdSayAA0cD0VG_SitSS_tYaKF">moneyMovements(budgetId:<wbr>)</a>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO5neveryA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/never" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO5neveryA2CmF">never</a>
                     </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns all money movements for a budget.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">moneyMovements</span><span class="p">(</span>
-    <span class="nv">budgetId</span><span class="p">:</span> <span class="kt">String</span>
-<span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">([</span><span class="kt"><a href="../Structs/MoneyMovement.html">MoneyMovement</a></span><span class="p">],</span> <span class="kt"><a href="../Typealiases.html#/s:9SwiftYNAB15ServerKnowledgea">ServerKnowledge</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">never</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>budgetId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The id of the budget (<em>last_used</em> can also be used to specify the last used
-budget)</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A list of money movements and the server knowledge</p>
                       </div>
                     </section>
                   </div>
@@ -302,69 +273,26 @@ budget)</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SwiftYNAB20MoneyMovementServiceV14moneyMovements8budgetId5monthSayAA0cD0VG_SitSS_SStYaKF"></a>
-                    <a name="//apple_ref/swift/Method/moneyMovements(budgetId:month:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SwiftYNAB20MoneyMovementServiceV14moneyMovements8budgetId5monthSayAA0cD0VG_SitSS_SStYaKF">moneyMovements(budgetId:<wbr>month:<wbr>)</a>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO5dailyyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/daily" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO5dailyyA2CmF">daily</a>
                     </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns money movements for a specific budget month.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">moneyMovements</span><span class="p">(</span>
-    <span class="nv">budgetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-    <span class="nv">month</span><span class="p">:</span> <span class="kt">String</span>
-<span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">([</span><span class="kt"><a href="../Structs/MoneyMovement.html">MoneyMovement</a></span><span class="p">],</span> <span class="kt"><a href="../Typealiases.html#/s:9SwiftYNAB15ServerKnowledgea">ServerKnowledge</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">daily</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>budgetId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The id of the budget (<em>last_used</em> can also be used to specify the last used
-budget)</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>month</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The budget month in ISO format (e.g. 2016-12-01) (&ldquo;current&rdquo; can also be used to
-specify the current calendar month (UTC))</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A list of money movements and the server knowledge</p>
                       </div>
                     </section>
                   </div>
@@ -372,55 +300,26 @@ specify the current calendar month (UTC))</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SwiftYNAB20MoneyMovementServiceV05moneyD6Groups8budgetIdSayAA0cD5GroupVG_SitSS_tYaKF"></a>
-                    <a name="//apple_ref/swift/Method/moneyMovementGroups(budgetId:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SwiftYNAB20MoneyMovementServiceV05moneyD6Groups8budgetIdSayAA0cD5GroupVG_SitSS_tYaKF">moneyMovementGroups(budgetId:<wbr>)</a>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO6weeklyyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/weekly" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO6weeklyyA2CmF">weekly</a>
                     </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns all money movement groups for a budget.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">moneyMovementGroups</span><span class="p">(</span>
-    <span class="nv">budgetId</span><span class="p">:</span> <span class="kt">String</span>
-<span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">([</span><span class="kt"><a href="../Structs/MoneyMovementGroup.html">MoneyMovementGroup</a></span><span class="p">],</span> <span class="kt"><a href="../Typealiases.html#/s:9SwiftYNAB15ServerKnowledgea">ServerKnowledge</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">weekly</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>budgetId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The id of the budget (<em>last_used</em> can also be used to specify the last used
-budget)</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A list of money movement groups and the server knowledge</p>
                       </div>
                     </section>
                   </div>
@@ -428,69 +327,269 @@ budget)</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SwiftYNAB20MoneyMovementServiceV05moneyD6Groups8budgetId5monthSayAA0cD5GroupVG_SitSS_SStYaKF"></a>
-                    <a name="//apple_ref/swift/Method/moneyMovementGroups(budgetId:month:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SwiftYNAB20MoneyMovementServiceV05moneyD6Groups8budgetId5monthSayAA0cD5GroupVG_SitSS_SStYaKF">moneyMovementGroups(budgetId:<wbr>month:<wbr>)</a>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO14everyOtherWeekyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/everyOtherWeek" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO14everyOtherWeekyA2CmF">everyOtherWeek</a>
                     </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns money movement groups for a specific budget month.</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">moneyMovementGroups</span><span class="p">(</span>
-    <span class="nv">budgetId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-    <span class="nv">month</span><span class="p">:</span> <span class="kt">String</span>
-<span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">([</span><span class="kt"><a href="../Structs/MoneyMovementGroup.html">MoneyMovementGroup</a></span><span class="p">],</span> <span class="kt"><a href="../Typealiases.html#/s:9SwiftYNAB15ServerKnowledgea">ServerKnowledge</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">everyOtherWeek</span></code></pre>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>budgetId</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The id of the budget (<em>last_used</em> can also be used to specify the last used
-budget)</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>month</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The budget month in ISO format (e.g. 2016-12-01) (&ldquo;current&rdquo; can also be used to
-specify the current calendar month (UTC))</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO11twiceAMonthyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/twiceAMonth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO11twiceAMonthyA2CmF">twiceAMonth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
                       </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A list of money movement groups and the server knowledge</p>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">twiceAMonth</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO11every4WeeksyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/every4Weeks" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO11every4WeeksyA2CmF">every4Weeks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">every4Weeks</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO7monthlyyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/monthly" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO7monthlyyA2CmF">monthly</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">monthly</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO15everyOtherMonthyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/everyOtherMonth" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO15everyOtherMonthyA2CmF">everyOtherMonth</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">everyOtherMonth</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO12every3MonthsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/every3Months" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO12every3MonthsyA2CmF">every3Months</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">every3Months</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO12every4MonthsyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/every4Months" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO12every4MonthsyA2CmF">every4Months</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">every4Months</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO10twiceAYearyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/twiceAYear" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO10twiceAYearyA2CmF">twiceAYear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">twiceAYear</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO6yearlyyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/yearly" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO6yearlyyA2CmF">yearly</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">yearly</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB29ScheduledTransactionFrequencyO14everyOtherYearyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/everyOtherYear" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB29ScheduledTransactionFrequencyO14everyOtherYearyA2CmF">everyOtherYear</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">everyOtherYear</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>

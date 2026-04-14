@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>UserService Structure Reference</title>
+    <title>GoalType Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/UserService" class="dashAnchor"></a>
-    <a title="UserService Structure Reference"></a>
+    <a name="//apple_ref/swift/Enum/GoalType" class="dashAnchor"></a>
+    <a title="GoalType Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">SwiftYNAB 3.2.0 Docs</a></p>
@@ -30,9 +30,9 @@
       <p id="breadcrumbs">
         <a href="../index.html">SwiftYNAB</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        <a href="../Structs.html">Structures</a>
+        <a href="../Enums.html">Enumerations</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        UserService Structure Reference
+        GoalType Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -229,15 +229,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>UserService</h1>
+            <h1>GoalType</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">UserService</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">GoalType</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
 
                 </div>
               </div>
-            <p>Provides access to user operations</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -246,33 +246,134 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:9SwiftYNAB11UserServiceV4userAA0C0VyYaKF"></a>
-                    <a name="//apple_ref/swift/Method/user()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:9SwiftYNAB11UserServiceV4userAA0C0VyYaKF">user()</a>
+                    <a name="/s:9SwiftYNAB8GoalTypeO21targetCategoryBalanceyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/targetCategoryBalance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB8GoalTypeO21targetCategoryBalanceyA2CmF">targetCategoryBalance</a>
                     </code>
-                      <span class="declaration-note">
-                        Asynchronous
-                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Returns authenticated user information</p>
+                        <p>Undocumented</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">user</span><span class="p">()</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/User.html">User</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">targetCategoryBalance</span> <span class="o">=</span> <span class="s">"TB"</span></code></pre>
 
                         </div>
                       </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A single user</p>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB8GoalTypeO27targetCategoryBalanceByDateyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/targetCategoryBalanceByDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB8GoalTypeO27targetCategoryBalanceByDateyA2CmF">targetCategoryBalanceByDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">targetCategoryBalanceByDate</span> <span class="o">=</span> <span class="s">"TBD"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB8GoalTypeO14monthlyFundingyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/monthlyFunding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB8GoalTypeO14monthlyFundingyA2CmF">monthlyFunding</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">monthlyFunding</span> <span class="o">=</span> <span class="s">"MF"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB8GoalTypeO16planYourSpendingyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/planYourSpending" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB8GoalTypeO16planYourSpendingyA2CmF">planYourSpending</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">planYourSpending</span> <span class="o">=</span> <span class="s">"NEED"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SwiftYNAB8GoalTypeO4debtyA2CmF"></a>
+                    <a name="//apple_ref/swift/Element/debt" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SwiftYNAB8GoalTypeO4debtyA2CmF">debt</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">debt</span> <span class="o">=</span> <span class="s">"DEBT"</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
